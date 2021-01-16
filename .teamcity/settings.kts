@@ -120,4 +120,8 @@ object id1_Subproject : Project({
 
 object id1_Subproject_Dfg : BuildType({
     name = "dfg"
+
+    requirements {
+        exists("docker.version", "RQ_1")
+    }
 })
