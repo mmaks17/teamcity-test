@@ -56,7 +56,10 @@ object RootTemplate : Template({
     steps {
         script {
             id = "RUNNER_4"
-            scriptContent = """echo "root build template""""
+            scriptContent = """
+                echo "root build template"
+                echo "Hello from git"
+                """.trimIndent()
         }
         placeholder {
             id = "RUNNER_5"
