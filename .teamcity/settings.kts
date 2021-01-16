@@ -121,6 +121,17 @@ object id1_Subproject : Project({
 object id1_Subproject_Dfg : BuildType({
     name = "dfg"
 
+    steps {
+        script {
+            name = "exec inginx"
+            id = "RUNNER_6"
+            scriptContent = """
+                docker pull nginx
+                docker exec -it nginx -t
+            """.trimIndent()
+        }
+    }
+
     requirements {
         exists("docker.version", "RQ_1")
     }
