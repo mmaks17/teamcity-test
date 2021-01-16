@@ -123,7 +123,7 @@ object id1_Subproject_Dfg : BuildType({
 
     steps {
         script {
-            name = "exec inginx"
+            name = "exec inginx test config"
             id = "RUNNER_6"
             scriptContent = """
                 docker pull nginx
