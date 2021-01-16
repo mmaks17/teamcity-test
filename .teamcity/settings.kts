@@ -130,7 +130,7 @@ object id1_Subproject_Dfg : BuildType({
             id = "RUNNER_6"
             scriptContent = """
                 docker pull nginx
-                docker run -it --rm nginx nginx -t
+                docker run -i --rm nginx nginx -t
             """.trimIndent()
         }
     }
